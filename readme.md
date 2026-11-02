@@ -55,7 +55,7 @@ Model ağırlıkları `keep_alive="15m"` parametresiyle VRAM üzerinde 15 dakika
 |        +--------------------------+--------------------------+                    |
 |        | (Code Review)            | (SQL Şema Analizi)       | (Teknik Sorgu)     |
 |        v                          v                          v                    |
-|   [Statik Ön-Analiz Motoru]   [Canlı Katalog Denetçisi]   [Dinamik Kural Enjektörü] |
+|   [Statik Ön-Analiz Motoru]   [Canlı Katalog Denetçisi] [Dinamik Kural Enjektörü] |
 |   (IDisposable, Parse, SQLi) (sys.tables / sys.indexes) (Deadlock / RCSI / CS0246)|
 +--------+--------------------------+--------------------------+--------------------+
          |                          |                          |
@@ -192,7 +192,7 @@ While model weights are kept warm in VRAM for 15 minutes via `keep_alive="15m"`,
 |        | (Code Review)              | (SQL Schema Audit)         | (Tech Query)   |
 |        v                            v                            v                |
 |   [Static Pre-Analysis Engine] [Live Catalog Inspector]    [Dynamic Rule Injector]|
-|   (IDisposable, Parse, SQLi)    (sys.tables / sys.indexes) (Deadlock / RCSI / CS0246)|
+|   (IDisposable, Parse, SQLi) (sys.tables / sys.indexes) (Deadlock / RCSI / CS0246)|
 +--------+----------------------------+----------------------------+----------------+
          |                            |                            |
          +----------------------------+----------------------------+
